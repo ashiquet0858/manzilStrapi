@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/phardhas",
+      "handler": "phardha.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/phardhas/count",
+      "handler": "phardha.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/phardhas/:id",
+      "handler": "phardha.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/phardhas",
+      "handler": "phardha.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/phardhas/:id",
+      "handler": "phardha.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/phardhas/:id",
+      "handler": "phardha.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

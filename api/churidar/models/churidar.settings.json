@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "churidar_s",
+  "info": {
+    "name": "Churidar "
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "prize": {
+      "type": "string"
+    },
+    "offer": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shalls",
+  "info": {
+    "name": "shall",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "prize": {
+      "type": "string"
+    },
+    "offer": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

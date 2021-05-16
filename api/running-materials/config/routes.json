@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/running-materials",
+      "handler": "running-materials.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/running-materials/count",
+      "handler": "running-materials.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/running-materials/:id",
+      "handler": "running-materials.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/running-materials",
+      "handler": "running-materials.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/running-materials/:id",
+      "handler": "running-materials.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/running-materials/:id",
+      "handler": "running-materials.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

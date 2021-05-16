@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/churidars",
+      "handler": "churidar.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/churidars/count",
+      "handler": "churidar.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/churidars/:id",
+      "handler": "churidar.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/churidars",
+      "handler": "churidar.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/churidars/:id",
+      "handler": "churidar.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/churidars/:id",
+      "handler": "churidar.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
